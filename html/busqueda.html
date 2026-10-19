@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woodstock - Búsqueda</title>
+    <link rel="icon" href="../img/logo.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+</head>
+
+<body>
+    <header class="topbar">
+        <a class="brand" href="index.html" aria-label="Woodstock inicio"><img src="../img/logo.png" alt="Woodstock"></a>
+        <form class="search-form" action="busqueda.html" method="get">
+            <label class="search-box"><span class="sr-only">Buscar productos</span><input type="search" name="q" placeholder="Buscar..." aria-label="Buscar productos"><button type="submit" class="search-submit" aria-label="Buscar"><span class="search-icon">⌕</span></button></label>
+        </form>
+    </header>
+
+    <main class="search-page">
+        <section class="search-results-wrap">
+            <h1 class="search-title">Resultados de búsqueda</h1>
+            <div id="search-results" class="search-results"></div>
+        </section>
+    </main>
+
+    <nav class="bottom-nav" aria-label="Navegación principal"><a class="active" href="index.html"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V10Z"/></svg></span>Inicio</a><a href="#"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.8 8.7c0 5.5-8.8 10.3-8.8 10.3S3.2 14.2 3.2 8.7A4.7 4.7 0 0 1 12 6.4a4.7 4.7 0 0 1 8.8 2.3Z"/></svg></span>Favoritos</a><a href="#"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h2l2 11h10l2-8H7M10 20a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm9 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/></svg></span>Carrito</a><a href="#"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20V7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v13M8 5V3h8v2M8 20v-5h8v5M4 9h16"/></svg></span>Vender</a></nav>
+    <script src="../js/script.js" defer></script>
+</body>

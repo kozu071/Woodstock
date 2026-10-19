@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woodstock - Inicio</title>
+    <link rel="icon" href="../img/logo.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+</head>
+
+<body>
+    <header class="topbar">
+        <a class="brand" href="#" aria-label="Woodstock inicio"><img src="../img/logo.png" alt="Woodstock"></a>
+        <form class="search-form" action="busqueda.html" method="get">
+            <label class="search-box"><span class="sr-only">Buscar productos</span><input type="search" name="q" placeholder="Buscar..." aria-label="Buscar productos"><button type="submit" class="search-submit" aria-label="Buscar"><span class="search-icon">⌕</span></button></label>
+        </form>
+    </header>
+    <main>
+        <div class="hero"><img src="../img/banner.png" alt="Selección de música Woodstock"></div>
+        <section class="catalog" aria-label="Catálogo de productos">
+            <section class="weekly-section" aria-labelledby="weekly-title">
+                <h1 id="weekly-title">Selección Semanal</h1>
+                <div class="product-row">
+                    <article class="product-card"><img src="../img/vinilos/morning glory.avif" alt="Álbum Morning Glory"><strong>(What's The Story) Morning Glory - Oasis - Vinilo</strong><small>$40.000</small></article>
+                    <article class="product-card"><img src="../img/vinilos/abbey road.jpg" alt="Álbum Abbey Road"><strong>Abbey Road - The Beatles - Vinilo</strong><small>$35.000 - 30%Off</small></article>
+                    <article class="product-card"><img src="../img/vinilos/ziggy stardust.avif" alt="Álbum Ziggy Stardust"><strong>The Rise And Fall Of Ziggy Stardust And The Spiders From Mars - David Bowie - Vinilo</strong><small>$49.800</small></article>
+                    <article class="product-card"><img src="../img/vinilos/jazz.jpeg" alt="Álbum de jazz"><strong>Jazz - Queen - Vinilo</strong><small>$37.500</small></article>
+                    <article class="product-card"><img src="../img/vinilos/bocanada.jpg" alt="Álbum Bocanada"><strong>Bocanada - Gustavo Cerati - Vinilo</strong><small>$32.000 - 20%Off</small></article>
+                </div>
+            </section>
+            <div class="category" id="ofertas" data-category="ofertas">
+                <div class="category-heading"><h2><a class="category-link" href="ofertas.html">Ofertas</a></h2></div>
+                <div class="category-carousel"><div class="carousel-controls"><button class="category-arrow carousel-prev" type="button" aria-label="Retroceder Ofertas">‹</button><button class="category-arrow carousel-next" type="button" aria-label="Avanzar Ofertas">›</button></div><div class="product-row"><article class="product-card"><img src="../img/ofertas/abbey road.jpg" alt="Abbey Road"><strong>Abbey Road - The Beatles - Vinilo</strong><small>$35.000 - 30%Off</small></article><article class="product-card"><img src="../img/ofertas/bocanada.jpg" alt="Bocanada"><strong>Bocanada - Gustavo Cerati - Vinilo</strong><small>$32.000 20%Off</small></article><article class="product-card"><img src="../img/ofertas/my generation.jpg" alt="My Generation"><strong>My Generation - The Who - Cassette</strong><small>$28.000 - 10%Off</small></article></div></div>
+            </div>
+            <div class="category" id="vinilos" data-category="vinilos">
+                <div class="category-heading"><h2><a class="category-link" href="vinilos.html">Vinilos</a></h2></div>
+                <div class="category-carousel"><div class="carousel-controls"><button class="category-arrow carousel-prev" type="button" aria-label="Retroceder Vinilos">‹</button><button class="category-arrow carousel-next" type="button" aria-label="Avanzar Vinilos">›</button></div><div class="product-row"><article class="product-card"><img src="../img/vinilos/morning glory.avif" alt="Vinilo Morning Glory"><strong>Morning Glory - Oasis</strong><small>$20.000</small></article><article class="product-card"><img src="../img/vinilos/ziggy stardust.avif" alt="Vinilo Ziggy Stardust"><strong>Ziggy Stardust - David Bowie</strong><small>$29.800</small></article><article class="product-card"><img src="../img/vinilos/jazz.jpeg" alt="Vinilo Jazz de Queen"><strong>Jazz - Queen</strong><small>$27.500</small></article></div></div>
+            </div>
+            <div class="category" data-category="cds"><div class="category-heading"><h2><a class="category-link" href="cds.html">CDs</a></h2></div><div class="category-carousel"><div class="carousel-controls"><button class="category-arrow carousel-prev" type="button" aria-label="Retroceder CDs">‹</button><button class="category-arrow carousel-next" type="button" aria-label="Avanzar CDs">›</button></div><div class="product-row"><article class="product-card"><img src="../img/cds/nada personal.jpg" alt="CD Nada Personal"><strong>Nada Personal - Soda Stereo</strong><small>$35.000</small></article><article class="product-card"><img src="../img/cds/ok computer.png" alt="CD OK Computer"><strong>OK Computer - Radiohead</strong><small>$29.000</small></article><article class="product-card"><img src="../img/cds/powerslave.jpg" alt="CD Powerslave"><strong>Powerslave - Iron Maiden</strong><small>$26.000</small></article></div></div></div>
+            <div class="category" data-category="cassettes"><div class="category-heading"><h2><a class="category-link" href="cassettes.html">Cassettes</a></h2></div><div class="category-carousel"><div class="carousel-controls"><button class="category-arrow carousel-prev" type="button" aria-label="Retroceder Cassettes">‹</button><button class="category-arrow carousel-next" type="button" aria-label="Avanzar Cassettes">›</button></div><div class="product-row"><article class="product-card"><img src="../img/cassettes/my generation.jpg" alt="Cassette My Generation"><strong>My Generation - The Who</strong><small>$18.000</small></article><article class="product-card"><img src="../img/cassettes/band on the run.jpg" alt="Cassette Band on the Run"><strong>Band on the Run - Wings</strong><small>$18.500</small></article><article class="product-card"><img src="../img/cassettes/all things must pass.jpg" alt="Cassette All Things Must Pass"><strong>All Things Must Pass</strong><small>$19.500</small></article></div></div></div>
+            <div class="category" data-category="mercaderia"><div class="category-heading"><h2><a class="category-link" href="mercaderia.html">Mercadería</a></h2></div><div class="category-carousel"><div class="carousel-controls"><button class="category-arrow carousel-prev" type="button" aria-label="Retroceder Mercadería">‹</button><button class="category-arrow carousel-next" type="button" aria-label="Avanzar Mercadería">›</button></div><div class="product-row"><article class="product-card"><img src="../img/mercaderia/armonica.webp" alt="Armónica"><strong>Armónica</strong><small>$18.000</small></article><article class="product-card"><img src="../img/mercaderia/taza1.jpg" alt="Taza Woodstock"><strong>Taza Woodstock</strong><small>$12.500</small></article><article class="product-card"><img src="../img/mercaderia/poster1.jpg" alt="Póster Woodstock"><strong>Póster Woodstock</strong><small>$9.900</small></article></div></div></div>
+        </section>
+    </main>
+    <nav class="bottom-nav" aria-label="Navegación principal"><a class="active" href="#"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V10Z"/></svg></span>Inicio</a><a href="#"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.8 8.7c0 5.5-8.8 10.3-8.8 10.3S3.2 14.2 3.2 8.7A4.7 4.7 0 0 1 12 6.4a4.7 4.7 0 0 1 8.8 2.3Z"/></svg></span>Favoritos</a><a href="#"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h2l2 11h10l2-8H7M10 20a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm9 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/></svg></span>Carrito</a><a href="#"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20V7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v13M8 5V3h8v2M8 20v-5h8v5M4 9h16"/></svg></span>Vender</a></nav>
+    <script src="../js/script.js" defer></script>
+</body>

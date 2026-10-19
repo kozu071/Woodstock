@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto - Woodstock</title>
+    <link rel="icon" href="../img/logo.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+</head>
+
+<body class="product-page">
+    <header class="topbar product-topbar">
+        <a class="back-link" href="index.html" aria-label="Volver al inicio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg></a>
+        <a class="brand" href="index.html" aria-label="Woodstock inicio"><img src="../img/logo.png" alt="Woodstock"></a>
+        <form class="search-form" action="busqueda.html" method="get">
+            <label class="search-box"><span class="sr-only">Buscar productos</span><input type="search" name="q" placeholder="Buscar..." aria-label="Buscar productos"><button type="submit" class="search-submit" aria-label="Buscar"><span class="search-icon">⌕</span></button></label>
+        </form>
+    </header>
+
+    <main class="product-detail">
+        <section class="product-main" aria-labelledby="product-name">
+            <div class="product-photo-wrap"><img id="product-image" class="product-photo" src="../img/vinilos/abbey road.jpg" alt="Abbey Road - The Beatles"></div>
+            <div class="product-info">
+                <h1 id="product-name">Abbey Road - The Beatles - Vinilo</h1>
+                <p id="product-category" class="product-category">Formato: Vinilo</p>
+                <p id="product-price" class="product-price">$35.000</p>
+                <div class="delivery-note">
+                    <span class="delivery-icon" aria-hidden="true">↗</span>
+                    <p><strong>Llega en 2 días</strong><br>Si comprás ahora, lo recibís en tu domicilio.<br>Envío: $3.500</p>
+                </div>
+
+                <label class="quantity-label" for="product-quantity">¿Cuántos querés comprar?</label>
+                <div class="product-purchase">
+                    <input id="product-quantity" type="number" min="1" value="1" inputmode="numeric" aria-label="Cantidad">
+                    <button id="add-to-cart" class="add-to-cart" type="button">Agregar al carrito</button>
+                </div>
+                <p id="cart-message" class="cart-message" role="status" aria-live="polite"></p>
+                <button id="toggle-favorite" class="favorite-toggle" type="button" aria-pressed="false">♡ Agregar a favoritos</button>
+                <p id="favorite-message" class="favorite-message" role="status" aria-live="polite"></p>
+                <p class="pickup-note">Escribinos a la sucursal si tenés dudas o querés retirar gratis en el local.</p>
+            </div>
+        </section>
+
+        <section class="store-card" aria-label="Información de la sucursal Woodstock">
+            <img id="store-image" src="../img/tienda.png" alt="Interior de la tienda Woodstock">
+            <div class="store-info">
+                <h2>Woodstock</h2>
+                <p>Charcas 4145, CABA</p>
+                <a href="tel:+5491123456789">+54 9 11 2345-6789 </a>
+                <a class="store-contact" href="https://wa.me/5491123456789">Escribir a la sucursal</a>
+            </div>
+        </section>
+    </main>
+
+    <nav class="bottom-nav" aria-label="Navegación principal"><a href="index.html"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V10Z"/></svg></span>Inicio</a><a href="#"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.8 8.7c0 5.5-8.8 10.3-8.8 10.3S3.2 14.2 3.2 8.7A4.7 4.7 0 0 1 12 6.4a4.7 4.7 0 0 1 8.8 2.3Z"/></svg></span>Favoritos</a><a href="#"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h2l2 11h10l2-8H7M10 20a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm9 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/></svg></span>Carrito</a><a href="#"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20V7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v13M8 5V3h8v2M8 20v-5h8v5M4 9h16"/></svg></span>Vender</a></nav>
+    <script src="../js/script.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woodstock - Favoritos</title>
+    <link rel="icon" href="../img/logo.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+</head>
+
+<body>
+    <header class="topbar offers-topbar">
+        <div class="offers-header-row"><a class="back-link" href="index.html" aria-label="Volver al inicio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg></a><h1>Favoritos</h1></div>
+        <a class="brand" href="index.html" aria-label="Woodstock inicio"><img src="../img/logo.png" alt="Woodstock"></a>
+    </header>
+
+    <main class="cart-page">
+        <div class="cart-heading">
+            <div><span class="cart-eyebrow">WOODSTOCK</span><h2>Tus favoritos</h2></div>
+            <span id="favorite-item-count" class="cart-item-count">0 productos</span>
+        </div>
+        <p id="favorite-error" class="cart-error" role="alert" hidden></p>
+        <div id="favorite-items" class="cart-items" aria-live="polite"></div>
+        <section id="favorite-empty" class="cart-empty" hidden>
+            <span class="empty-cart-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.8 8.7c0 5.5-8.8 10.3-8.8 10.3S3.2 14.2 3.2 8.7A4.7 4.7 0 0 1 12 6.4a4.7 4.7 0 0 1 8.8 2.3Z"/></svg></span>
+            <h2>Todavía no tenés favoritos</h2>
+            <p>Guardá los productos que te gustan para encontrarlos fácilmente.</p>
+            <a href="index.html">Explorar productos</a>
+        </section>
+    </main>
+
+    <nav class="bottom-nav" aria-label="Navegación principal"><a href="index.html"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V10Z"/></svg></span>Inicio</a><a class="active" href="favoritos.html" aria-current="page"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.8 8.7c0 5.5-8.8 10.3-8.8 10.3S3.2 14.2 3.2 8.7A4.7 4.7 0 0 1 12 6.4a4.7 4.7 0 0 1 8.8 2.3Z"/></svg></span>Favoritos</a><a href="carrito.html"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h2l2 11h10l2-8H7M10 20a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm9 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/></svg></span>Carrito</a></nav>
+    <script src="../js/script.js" defer></script>
+</body>
+
+</html>

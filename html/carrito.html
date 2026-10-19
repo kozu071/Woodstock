@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woodstock - Carrito</title>
+    <link rel="icon" href="../img/logo.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+</head>
+
+<body>
+    <header class="topbar offers-topbar">
+        <div class="offers-header-row"><a class="back-link" href="index.html" aria-label="Volver al inicio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg></a><h1>Carrito</h1></div>
+        <a class="brand" href="index.html" aria-label="Woodstock inicio"><img src="../img/logo.png" alt="Woodstock"></a>
+    </header>
+
+    <main class="cart-page">
+        <div id="cart-heading" class="cart-heading">
+            <div><span class="cart-eyebrow">WOODSTOCK</span><h2>Tu carrito</h2></div>
+            <span id="cart-item-count" class="cart-item-count">0 productos</span>
+        </div>
+        <p id="cart-error" class="cart-error" role="alert" hidden></p>
+        <div id="cart-items" class="cart-items" aria-live="polite"></div>
+        <section id="cart-summary" class="cart-summary" hidden aria-label="Resumen del carrito">
+            <div class="cart-breakdown-row"><span>Productos</span><strong id="cart-subtotal">$0</strong></div>
+            <div class="cart-breakdown-row"><span>Envío</span><strong>$3.500</strong></div>
+            <div class="cart-total-row"><span>Total</span><strong id="cart-total">$0</strong></div>
+            <button id="checkout-button" class="checkout-button" type="button">Continuar y pagar</button>
+            <p id="checkout-message" class="checkout-message" role="status" aria-live="polite"></p>
+        </section>
+        <section id="purchase-confirmation" class="purchase-confirmation" hidden role="status" aria-live="polite">
+            <span class="confirmation-icon" aria-hidden="true"><svg viewBox="0 0 64 64"><circle class="confirmation-circle" cx="32" cy="32" r="27"/><path class="confirmation-check" d="m19 33 9 9 18-20"/></svg></span>
+            <h2>¡Pago realizado!</h2>
+            <p>Tu compra fue confirmada. Tus productos llegarán en 2 días.</p>
+            <a href="index.html">Seguir comprando</a>
+        </section>
+        <section id="cart-empty" class="cart-empty" hidden>
+            <span class="empty-cart-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 4h2l2.2 11h10.6L20 8H6M10 20a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm9 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/></svg></span>
+            <h2>Tu carrito está vacío</h2>
+            <p>Cuando agregues productos, los vas a encontrar acá.</p>
+            <a href="index.html">Explorar productos</a>
+        </section>
+    </main>
+
+    <nav class="bottom-nav" aria-label="Navegación principal"><a href="index.html"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V10Z"/></svg></span>Inicio</a><a href="#"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.8 8.7c0 5.5-8.8 10.3-8.8 10.3S3.2 14.2 3.2 8.7A4.7 4.7 0 0 1 12 6.4a4.7 4.7 0 0 1 8.8 2.3Z"/></svg></span>Favoritos</a><a class="active" href="carrito.html" aria-current="page"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h2l2 11h10l2-8H7M10 20a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm9 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/></svg></span>Carrito</a><a href="#"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20V7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v13M8 5V3h8v2M8 20v-5h8v5M4 9h16"/></svg></span>Vender</a></nav>
+    <script src="../js/script.js" defer></script>
+</body>
